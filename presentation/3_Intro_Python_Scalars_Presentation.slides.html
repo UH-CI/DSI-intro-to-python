@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>2_Intro_Python_Python_Basics_Presentation slides</title>
+<title>3_Intro_Python_Scalars_Presentation slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11905,23 +11905,13 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Python-Basics">Python Basics<a class="anchor-link" href="#Python-Basics">&#182;</a></h1><hr>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Statements">Statements<a class="anchor-link" href="#Statements">&#182;</a></h2><hr>
+<h1 id="Scalars">Scalars<a class="anchor-link" href="#Scalars">&#182;</a></h1><hr>
 <ul>
-<li>Statements are a single line of Python code. </li>
-<li>Includes:<ul>
-<li>Math operations</li>
-<li>Printing</li>
-<li>Assigning values to variables</li>
-<li>Comments</li>
+<li>Variables that contain a single value are referred to as scalars. </li>
+<li>Scalar variables can contain:<ul>
+<li>Numeric values</li>
+<li>Strings (text)</li>
+<li>Booleans (<code>True</code> or <code>False</code>).</li>
 </ul>
 </li>
 </ul>
@@ -11933,55 +11923,395 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Mathematical-Operations">Mathematical Operations<a class="anchor-link" href="#Mathematical-Operations">&#182;</a></h3><hr>
+<h2 id="Numeric-Scalars">Numeric Scalars<a class="anchor-link" href="#Numeric-Scalars">&#182;</a></h2><hr>
 <ul>
-<li>Python can perform basic math operations including addition, subtraction, multiplication, division, etc.</li>
-<li>Python follows the algebraic rules of precedence when interpreting your expression.</li>
+<li>Numeric scalars are good for storing quantitative information that consists of single values. </li>
+<li>The two types of numeric scalars:<ul>
+<li>Integers</li>
+<li>Floats</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Integers">Integers<a class="anchor-link" href="#Integers">&#182;</a></h3><hr>
+<ul>
+<li><em>Integers</em> are positive or negative whole numbers that do not have a decimal point. </li>
+</ul>
+<p><img src="images/scalars/integers.png" alt="drawing" style="width:400px;"/></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
+<ul>
+<li>The age of a victim of a shark encounter in New Zealand is best represented using an integer. </li>
+<li>We can store the victim's age in a variable called <code>nz_victim_age</code>.</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nz_victim_age</span> <span class="o">=</span> <span class="mi">39</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nz_victim_age</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>39
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Floats">Floats<a class="anchor-link" href="#Floats">&#182;</a></h3><hr>
+<ul>
+<li>Numeric values that contain decimal points are called <em>floats</em>.</li>
+<li>The following are all examples of floats:<ul>
+<li>0.000009678</li>
+<li>2.0</li>
+<li>121313.5</li>
+<li>33.45</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
+<ul>
+<li>The variable, <code>aus_shark_size</code> contains a shark's length in meters (this is an Aussie shark ...  they use the metric system, Mate!). 
+<img src="images/scalars/aus_shark_size.png" alt="drawing" style="width:400px;"/></li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aus_shark_size</span> <span class="o">=</span> <span class="mf">3.5</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Strings">Strings<a class="anchor-link" href="#Strings">&#182;</a></h2><hr>
+<ul>
+<li><em>Strings</em> are series of characters that occur on the same line and contained within double quotes (<code>" "</code>) or single quotes (<code>' '</code>). </li>
+<li>Strings may contain letters, digits, or even characters like %.</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="n">variable_name</span> <span class="o">=</span> <span class="s2">&quot;This is a string&quot;</span>
+<span class="n">variable_name_2</span> <span class="o">=</span> <span class="s1">&#39;This is also a string&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
+<ul>
+<li>To create a statement to assign a string variable that holds the activity of a victim before a shark encounter, we might write: </li>
+</ul>
+<p><img src="images/scalars/aus_activity.png" alt="drawing" style="width:450px;"/></p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aus_activity</span> <span class="o">=</span> <span class="s2">&quot;Free Diving&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">aus_activity</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Free Diving
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
+<p>How do you assign the following string of characters into a variable called <code>nz_species</code>?</p>
+<p>Mako Shark</p>
+<p>A.</p>
+<div class="highlight"><pre><span></span><span class="n">nz_species</span> <span class="o">=</span> <span class="s1">&#39;Mako Shark&#39;</span>
+</pre></div>
+<p>B.</p>
+<div class="highlight"><pre><span></span><span class="n">nz_species</span> <span class="o">=</span> <span class="n">Mako</span> <span class="n">Shark</span>
+</pre></div>
+<p>C.</p>
+<div class="highlight"><pre><span></span><span class="n">nz_species</span> <span class="o">=</span> <span class="n">Mako_Shark</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Booleans">Booleans<a class="anchor-link" href="#Booleans">&#182;</a></h2><hr>
+<ul>
+<li>Booleans are data types that evaluate to either <code>True</code> or <code>False</code>. </li>
+<li>Booleans are important because they play key roles in controlling the flow of programs, which we will cover in this and following chapters. </li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Assigning-Boolean-Variables">Assigning Boolean Variables<a class="anchor-link" href="#Assigning-Boolean-Variables">&#182;</a></h3><hr>
+<ul>
+<li>You can directly assign a Boolean value to a variable with a variable name, the assignment operator (<code>=</code>), and <code>True</code> or <code>False</code>. </li>
+<li>Quotes are not used around the True or False since this is not a string.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
+<ul>
+<li>If we wanted to create a variable to represent whether or not the shark encounter in Australia was fatal, we could write the following statement:</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aus_encounter_fatality</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aus_encounter_fatality</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>False
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Notice that Booleans <code>True</code> and <code>False</code> are capitalized</li>
+<li>Otherwise Python will not recognize these as reserved keywords.</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
+<ul>
+<li>In the cell below, you'll notice that lowercase <code>true</code> returns an error because Python thinks it is a variable that has not yet been defined.</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nz_encounter_fatality</span> <span class="o">=</span> <span class="n">true</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nz_encounter_fatality</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-1-ae19a94adaaf&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>nz_attack_fatality <span class="ansi-blue-fg">=</span> true
+<span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span>nz_attack_fatality<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;true&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Operations-on-Scalars:-if-else-Statements">Operations on Scalars: if-else Statements<a class="anchor-link" href="#Operations-on-Scalars:-if-else-Statements">&#182;</a></h2><hr>
+<ul>
+<li><code>if-else</code> statements determine whether a block of code gets executed. </li>
+<li>For example, you can use an <code>if-else</code> statement to check if a customer's account has sufficient funds before authorizing a transaction. </li>
+<li>Before we delve into the specifics of <code>if-else</code> statements, you need to understand conditional tests and how they work.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Conditional-Tests">Conditional Tests<a class="anchor-link" href="#Conditional-Tests">&#182;</a></h3><hr>
+<ul>
+<li><code>if-else</code> uses <em>arithmetic logic operators</em> to evaluate whether a statement is <code>True</code> or <code>False</code>.</li>
 </ul>
 <table>
 <thead><tr>
-<th>Order of Precedence</th>
-<th>Math Operation</th>
+<th>Arithmetic Logic Operator</th>
 <th>Mathematical Symbol</th>
-<th>Python Symbol</th>
+<th>Python Notation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>Parentheses</td>
-<td>( )</td>
-<td>( )</td>
+<td>Equals</td>
+<td>=</td>
+<td>==</td>
 </tr>
 <tr>
-<td>2</td>
-<td>Exponent</td>
-<td>^</td>
-<td>**</td>
+<td>Not Equal</td>
+<td>≠</td>
+<td>!=</td>
 </tr>
 <tr>
-<td>3</td>
-<td>Multiplication</td>
-<td>×</td>
-<td>*</td>
+<td>Greater Than</td>
+<td>&gt;</td>
+<td>&gt;</td>
 </tr>
 <tr>
-<td>3</td>
-<td>Division</td>
-<td>÷</td>
-<td>/</td>
+<td>Less Than</td>
+<td>&lt;</td>
+<td>&lt;</td>
 </tr>
 <tr>
-<td>4</td>
-<td>Addition</td>
-<td>+</td>
-<td>+</td>
+<td>Greater Than or Equal to</td>
+<td>≥</td>
+<td>&gt;=</td>
 </tr>
 <tr>
-<td>4</td>
-<td>Subtraction</td>
-<td>−</td>
-<td>-</td>
+<td>Less Than or Equal to</td>
+<td>≤</td>
+<td>&lt;=</td>
 </tr>
 </tbody>
 </table>
@@ -11994,320 +12324,8 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
-<p>$$
-20 \times 0.5 \times (1+\frac{4.5}{100})
-$$</p>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">20</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="mf">4.5</span> <span class="o">/</span> <span class="mi">100</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[1]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>10.45</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Printing">Printing<a class="anchor-link" href="#Printing">&#182;</a></h2><hr>
 <ul>
-<li>Jupyter Notebooks will print the result of the most recent statement written in the cell. </li>
-<li>Use <code>print()</code> for printing statements that do not occur on the last line.</li>
-<li><code>print()</code> is a function that prints the objects within the parentheses.</li>
-<li>Functions are named bundles of instructions that carry out a specific task.</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
-<ul>
-<li>Jupyter explicitly printed 1 and automatically printed the last statement, 7.</li>
-</ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="mi">2</span>
-<span class="mi">3</span>
-<span class="mi">4</span>
-<span class="mi">5</span>
-<span class="mi">6</span>
-<span class="mi">7</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>1
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[2]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>7</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
-<p>Which of the following numbers will print?</p>
-<div class="highlight"><pre><span></span><span class="mi">1</span>
-<span class="mi">2</span>
-<span class="k">print</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="mi">5</span>
-<span class="mi">7</span>
-<span class="k">print</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span>
-<span class="mi">17</span>
-<span class="mi">19</span>
-</pre></div>
-<p>A. 3 and 13</p>
-<p>B. 19</p>
-<p>C. 3, 13 and 19</p>
-<p>D. All of the numbers</p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
-<p>Which of the following code snippets print only 1 and 5?</p>
-<p><img src="images/python_basics/ch2_quiz_2.png" alt="drawing" style="width:400px;"/></p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Assigning-Values-to-Variables">Assigning Values to Variables<a class="anchor-link" href="#Assigning-Values-to-Variables">&#182;</a></h3><hr>
-<ul>
-<li>Variables are placeholders for values that are stored in memory.</li>
-</ul>
-<p><img src="images/python_basics/assignment_statement.jpg" alt="drawing" style="width:450px;"/></p>
-<ul>
-<li>The variable name is followed by <code>=</code>, which is followed by the value that needs to be stored.</li>
-<li>Variables can be used in mathematical operations and printing.</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
-<ul>
-<li>The value, 8.25, is assigned to the name, <code>pokebowl_price</code>.</li>
-</ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pokebowl_price</span> <span class="o">=</span> <span class="mf">8.25</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
-<ul>
-<li>The poke bowl price plus tax is calculated and the result of the calculation is printed.</li>
-</ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">pokebowl_price</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mf">0.05</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>8.6625
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Python-Variable-Name-Rules">Python Variable Name Rules<a class="anchor-link" href="#Python-Variable-Name-Rules">&#182;</a></h4><hr>
-<ul>
-<li>Variable names can contain letters, numbers and underscores</li>
-<li>Spaces and other characters are not allowed in variable names. </li>
-<li>Names can start with letters and underscores, but not numbers.</li>
-<li>Examples of valid label names:<ul>
-<li><code>favorite_poke</code></li>
-<li><code>poke_2019</code></li>
-</ul>
-</li>
-<li>Examples of invalid label names:<ul>
-<li><code>#1 poke</code></li>
-<li><code>2019_poke</code></li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
-<p>Which of the following are NOT valid variable labels?</p>
-<p>A.</p>
-<div class="highlight"><pre><span></span><span class="s2">&quot; &quot;</span><span class="o">=</span> <span class="mi">4</span>
-</pre></div>
-<p>B.</p>
-<div class="highlight"><pre><span></span><span class="bp">True</span> <span class="o">=</span> <span class="mi">4</span>
-</pre></div>
-<p>C.</p>
-<div class="highlight"><pre><span></span><span class="mi">14</span> <span class="o">=</span> <span class="mi">4</span>
-</pre></div>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
-<p>True or False: Are these two variable labels equivalent?</p>
-<p><code>big_cat</code> and <code>Big_cat</code></p>
-<p>A. 
-True</p>
-<p>B. 
-False</p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Comments">Comments<a class="anchor-link" href="#Comments">&#182;</a></h2><hr>
-<ul>
-<li>Comments are commonly used to explain what code is doing. </li>
-<li>Comment line starts with <code>#</code>, and everything to the right of the <code>#</code> is ignored by the Python interpreter.</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
-<ul>
-<li>All lines below are comments.</li>
+<li>We will use a Boolean expression to check if the age of the New Zealand shark victim was greater than 10 years old.</li>
 </ul>
 
 </div>
@@ -12318,16 +12336,30 @@ False</p>
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This is a comment</span>
-<span class="c1">### This is also a comment</span>
-
-
-<span class="c1"># This code was edited by Mark on 12 October 2018</span>
-
-<span class="c1"># Run the code below</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nz_victim_age</span> <span class="o">&gt;</span> <span class="mi">10</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12336,20 +12368,131 @@ False</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">&#182;</a></h2><hr>
-<p>In this section, you learned the following concepts:</p>
+<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
+<p>Which of the following will evaluate to <code>False</code> given that <code>nz_victim_age = 39</code>?</p>
+<p><img src="images/scalars/ch3_quiz_2.png" alt="drawing" style="width:500px;"/></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="if-else-Statement-Structure"><code>if-else</code> Statement Structure<a class="anchor-link" href="#if-else-Statement-Structure">&#182;</a></h3><hr>
 <ul>
-<li>Primary Python operators</li>
-<li>Assigning values to variables</li>
-<li>Statements</li>
-<li>Printing literal values or variables using the  <code>print()</code> function</li>
-<li>The importance of and how to comment code.</li>
+<li>Lines after <code>if</code> and <code>else</code> should be indented -- best practice suggests using four spaces. </li>
+<li>All indented lines of code after <code>if</code> will be executed if the conditional test evaluates to <code>True</code></li>
+<li>The <code>else</code> clause specifies an alternative set of instructions, if the conditions set in the <code>if</code> statement were not met.</li>
 </ul>
-<p>In the next section, you will learn more about  scalars and  operations that are used on them.</p>
+<hr>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">conditional</span> <span class="n">test</span><span class="p">:</span>
+      <span class="n">execute</span> <span class="n">something</span>
+<span class="k">else</span><span class="p">:</span>
+      <span class="n">execute</span> <span class="n">something</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
+<ul>
+<li>For example, we could categorize the shark into a small or large shark categeory by creating a conditional test for its length. </li>
+<li>We can test if the shark in the New Zealand shark encounter was greater than 2 meters, and to print 'Large Shark', if this condition was met, or to print 'Small Shark' if this condition was not met.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="images/scalars/if_else_shark.JPG" alt="drawing" style="width:400px;"/></p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nz_shark_size</span> <span class="o">=</span> <span class="mf">1.5</span>
+
+<span class="k">if</span> <span class="n">nz_shark_size</span> <span class="o">&gt;</span> <span class="mf">2.0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Large Shark&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Small Shark&#39;</span><span class="p">)</span>
+</pre></div>
 
 </div>
 </div>
 </div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Small shark
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
+<p>What does the following snippet of code print?</p>
+<div class="highlight"><pre><span></span><span class="n">nz_victim_age</span> <span class="o">=</span> <span class="mi">39</span>
+<span class="k">if</span> <span class="n">nz_victim_age</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Minor&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Adult&#39;</span><span class="p">)</span>
+</pre></div>
+<p>A.</p>
+<div class="highlight"><pre><span></span><span class="s1">&#39;Minor&#39;</span>
+</pre></div>
+<p>B.</p>
+<div class="highlight"><pre><span></span><span class="s1">&#39;Adult&#39;</span>
+</pre></div>
+<p>C.</p>
+<div class="highlight"><pre><span></span><span class="mi">39</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Summary:">Summary:<a class="anchor-link" href="#Summary:">&#182;</a></h2><hr>
+<p>In this chapter, you learned about:</p>
+<ul>
+<li>The different types of scalars including integers, floats, strings, and Booleans. </li>
+<li>Boolean statements and if else statements</li>
+</ul>
+<p>The next chapter will go over how to use pre-written Python variables and functions. You will learn about modules and how to use the functionalities stored in them.</p>
+
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 

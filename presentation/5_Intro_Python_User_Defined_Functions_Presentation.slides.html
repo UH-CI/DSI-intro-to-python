@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>2_Intro_Python_Python_Basics_Presentation slides</title>
+<title>5_Intro_Python_User_Defined_Functions_Presentation slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11905,7 +11905,11 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Python-Basics">Python Basics<a class="anchor-link" href="#Python-Basics">&#182;</a></h1><hr>
+<h1 id="User-Defined-Functions">User Defined Functions<a class="anchor-link" href="#User-Defined-Functions">&#182;</a></h1><hr>
+<ul>
+<li>Functions are named blocks of code, which carry out a specific task, and can take inputs and return values.</li>
+<li>Defining a frequently used block of code as a function increases script readability and efficiency.  </li>
+</ul>
 
 </div>
 </div>
@@ -11914,17 +11918,16 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Statements">Statements<a class="anchor-link" href="#Statements">&#182;</a></h2><hr>
+<h2 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h2><hr>
 <ul>
-<li>Statements are a single line of Python code. </li>
-<li>Includes:<ul>
-<li>Math operations</li>
-<li>Printing</li>
-<li>Assigning values to variables</li>
-<li>Comments</li>
-</ul>
+<li><p>The function definition starts with the keyword, <code>def</code>, followed by its name and a parenthesized list of parameters your function will use.</p>
+</li>
+<li><p>The body of a function is the indented block of code that follows the definition and is run each time the function is called.</p>
+</li>
+<li><p>If we want the function to return something, i.e. give an output after it is called, then we use the <code>return</code> keyword followed by a return value.</p>
 </li>
 </ul>
+<p><img src="images/user_defined_functions/syntax.png" alt="drawing" style="width:500px;"/></p>
 
 </div>
 </div>
@@ -11933,58 +11936,11 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Mathematical-Operations">Mathematical Operations<a class="anchor-link" href="#Mathematical-Operations">&#182;</a></h3><hr>
+<h3 id="Local-Variables">Local Variables<a class="anchor-link" href="#Local-Variables">&#182;</a></h3><hr>
 <ul>
-<li>Python can perform basic math operations including addition, subtraction, multiplication, division, etc.</li>
-<li>Python follows the algebraic rules of precedence when interpreting your expression.</li>
+<li>Any variable that is defined or modified inside a function is a local variable. </li>
+<li>Local variables in functions are independent from variables outside the function.</li>
 </ul>
-<table>
-<thead><tr>
-<th>Order of Precedence</th>
-<th>Math Operation</th>
-<th>Mathematical Symbol</th>
-<th>Python Symbol</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Parentheses</td>
-<td>( )</td>
-<td>( )</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Exponent</td>
-<td>^</td>
-<td>**</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Multiplication</td>
-<td>×</td>
-<td>*</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Division</td>
-<td>÷</td>
-<td>/</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Addition</td>
-<td>+</td>
-<td>+</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Subtraction</td>
-<td>−</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
 
 </div>
 </div>
@@ -11994,9 +11950,9 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
-<p>$$
-20 \times 0.5 \times (1+\frac{4.5}{100})
-$$</p>
+<ul>
+<li>Here we define the <code>fahr_to_celsius()</code> function and use it to determine what 250 Fahrenheit is in Celsius.</li>
+</ul>
 
 </div>
 </div>
@@ -12006,7 +11962,11 @@ $$</p>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">20</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="mf">4.5</span> <span class="o">/</span> <span class="mi">100</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fahr_to_celsius</span><span class="p">(</span><span class="n">fahr</span><span class="p">):</span>
+  <span class="n">celsius</span> <span class="o">=</span> <span class="p">(</span><span class="n">fahr</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">9</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">celsius</span>
+
+<span class="n">fahr_to_celsius</span><span class="p">(</span><span class="mi">250</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12025,7 +11985,7 @@ $$</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>10.45</pre>
+<pre>121.11111111111111</pre>
 </div>
 
 </div>
@@ -12038,24 +11998,8 @@ $$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Printing">Printing<a class="anchor-link" href="#Printing">&#182;</a></h2><hr>
 <ul>
-<li>Jupyter Notebooks will print the result of the most recent statement written in the cell. </li>
-<li>Use <code>print()</code> for printing statements that do not occur on the last line.</li>
-<li><code>print()</code> is a function that prints the objects within the parentheses.</li>
-<li>Functions are named bundles of instructions that carry out a specific task.</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
-<ul>
-<li>Jupyter explicitly printed 1 and automatically printed the last statement, 7.</li>
+<li>After <code>fahr_to_celsius(250)</code>, the expected value of <code>celsius</code> is 121.11 degrees Celsius. Let's try to add 273.15 to this <code>celsius</code>, which converts <code>celsius</code> to Kelvin.</li>
 </ul>
 
 </div>
@@ -12066,13 +12010,7 @@ $$</p>
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="mi">2</span>
-<span class="mi">3</span>
-<span class="mi">4</span>
-<span class="mi">5</span>
-<span class="mi">6</span>
-<span class="mi">7</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">celsius</span> <span class="o">+</span> <span class="mf">273.15</span>
 </pre></div>
 
 </div>
@@ -12088,11 +12026,88 @@ $$</p>
 <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>1
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-2-53be66c1655a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>celsius<span class="ansi-blue-fg">+</span><span class="ansi-cyan-fg">273.15</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;celsius&#39; is not defined</pre>
 </div>
 </div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Quiz-1">Quiz 1<a class="anchor-link" href="#Quiz-1">&#182;</a></h3><hr>
+<p>True or False: The following two functions will always return the same value.</p>
+<p>Function 1:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">present_value</span><span class="p">(</span><span class="n">future_value</span><span class="p">,</span> <span class="n">interest</span><span class="p">,</span> <span class="n">time_periods</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">future_value</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">interest</span><span class="p">)</span> <span class="o">**</span> <span class="n">time_periods</span>
+</pre></div>
+<p>Function 2:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">present_value</span><span class="p">(</span><span class="n">future_value</span><span class="p">,</span> <span class="n">interest</span><span class="p">,</span> <span class="n">time_periods</span><span class="p">)</span>
+  <span class="n">pv</span> <span class="o">=</span> <span class="n">future_value</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">interest</span><span class="p">)</span> <span class="o">**</span> <span class="n">time_periods</span>
+  <span class="k">return</span> <span class="n">pv</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Default-Parameters">Default Parameters<a class="anchor-link" href="#Default-Parameters">&#182;</a></h2><hr>
+<ul>
+<li><p>You can define a <em>default value</em> for Python to use when a parameter is not specified.</p>
+</li>
+<li><p>To define a default parameter, simply specify the default parameter in the function definition with <code>=</code>.</p>
+</li>
+<li>Make sure that your default parameters come after the parameters without default values.</li>
+</ul>
+<p><img src="images/user_defined_functions/default.jpg" alt="drawing" style="width:550px;"/></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
+<ul>
+<li>We can write a function that calculates weight based off of mass and gravity and set the default gravity to 9.81 $m/s^2$.</li>
+<li>Since only mass was passed to <code>weight()</code>,  the <code>weight()</code> function used the default gravity, which was 9.81 $m/s^2$. </li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">weight</span><span class="p">(</span><span class="n">mass</span><span class="p">,</span> <span class="n">gravity</span><span class="o">=</span><span class="mf">9.81</span><span class="p">):</span>
+  <span class="k">return</span> <span class="n">mass</span> <span class="o">*</span> <span class="n">gravity</span>
+
+<span class="n">weight</span><span class="p">(</span><span class="mi">62</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
 
 <div class="output_area">
 
@@ -12102,7 +12117,7 @@ $$</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>7</pre>
+<pre>608.22</pre>
 </div>
 
 </div>
@@ -12115,96 +12130,21 @@ $$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
-<p>Which of the following numbers will print?</p>
-<div class="highlight"><pre><span></span><span class="mi">1</span>
-<span class="mi">2</span>
-<span class="k">print</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="mi">5</span>
-<span class="mi">7</span>
-<span class="k">print</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span>
-<span class="mi">17</span>
-<span class="mi">19</span>
-</pre></div>
-<p>A. 3 and 13</p>
-<p>B. 19</p>
-<p>C. 3, 13 and 19</p>
-<p>D. All of the numbers</p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
-<p>Which of the following code snippets print only 1 and 5?</p>
-<p><img src="images/python_basics/ch2_quiz_2.png" alt="drawing" style="width:400px;"/></p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Assigning-Values-to-Variables">Assigning Values to Variables<a class="anchor-link" href="#Assigning-Values-to-Variables">&#182;</a></h3><hr>
+<h3 id="Changing-Default-Parameters">Changing Default Parameters<a class="anchor-link" href="#Changing-Default-Parameters">&#182;</a></h3><hr>
 <ul>
-<li>Variables are placeholders for values that are stored in memory.</li>
+<li>To change keyword parameters, you use the <code>=</code> operator to specify the value that you want to use instead when you call the function. </li>
 </ul>
-<p><img src="images/python_basics/assignment_statement.jpg" alt="drawing" style="width:450px;"/></p>
-<ul>
-<li>The variable name is followed by <code>=</code>, which is followed by the value that needs to be stored.</li>
-<li>Variables can be used in mathematical operations and printing.</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
-<ul>
-<li>The value, 8.25, is assigned to the name, <code>pokebowl_price</code>.</li>
-</ul>
+<p><img src="images/user_defined_functions/changing_default.jpg" alt="drawing" style="width:600px;"/></p>
 
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pokebowl_price</span> <span class="o">=</span> <span class="mf">8.25</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
-<ul>
-<li>The poke bowl price plus tax is calculated and the result of the calculation is printed.</li>
-</ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">pokebowl_price</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mf">0.05</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">weight</span><span class="p">(</span><span class="mi">62</span><span class="p">,</span> <span class="n">gravity</span><span class="o">=</span><span class="mf">3.71</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -12221,7 +12161,7 @@ $$</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>8.6625
+<pre>230.02
 </pre>
 </div>
 </div>
@@ -12234,100 +12174,42 @@ $$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Python-Variable-Name-Rules">Python Variable Name Rules<a class="anchor-link" href="#Python-Variable-Name-Rules">&#182;</a></h4><hr>
 <ul>
-<li>Variable names can contain letters, numbers and underscores</li>
-<li>Spaces and other characters are not allowed in variable names. </li>
-<li>Names can start with letters and underscores, but not numbers.</li>
-<li>Examples of valid label names:<ul>
-<li><code>favorite_poke</code></li>
-<li><code>poke_2019</code></li>
+<li>You can also use keyword parameters to specify the parameters that do not have default values as well. </li>
+<li>Just make sure your positional parameters come before the keyword parameters.</li>
 </ul>
-</li>
-<li>Examples of invalid label names:<ul>
-<li><code>#1 poke</code></li>
-<li><code>2019_poke</code></li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
-<p>Which of the following are NOT valid variable labels?</p>
-<p>A.</p>
-<div class="highlight"><pre><span></span><span class="s2">&quot; &quot;</span><span class="o">=</span> <span class="mi">4</span>
-</pre></div>
-<p>B.</p>
-<div class="highlight"><pre><span></span><span class="bp">True</span> <span class="o">=</span> <span class="mi">4</span>
-</pre></div>
-<p>C.</p>
-<div class="highlight"><pre><span></span><span class="mi">14</span> <span class="o">=</span> <span class="mi">4</span>
-</pre></div>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
-<p>True or False: Are these two variable labels equivalent?</p>
-<p><code>big_cat</code> and <code>Big_cat</code></p>
-<p>A. 
-True</p>
-<p>B. 
-False</p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Comments">Comments<a class="anchor-link" href="#Comments">&#182;</a></h2><hr>
-<ul>
-<li>Comments are commonly used to explain what code is doing. </li>
-<li>Comment line starts with <code>#</code>, and everything to the right of the <code>#</code> is ignored by the Python interpreter.</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
-<ul>
-<li>All lines below are comments.</li>
-</ul>
+<p><img src="images/user_defined_functions/keyword_parameter.jpg" alt="drawing" style="width:550px;"/></p>
 
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This is a comment</span>
-<span class="c1">### This is also a comment</span>
-
-
-<span class="c1"># This code was edited by Mark on 12 October 2018</span>
-
-<span class="c1"># Run the code below</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">weight</span><span class="p">(</span><span class="n">mass</span><span class="o">=</span><span class="mi">62</span><span class="p">,</span> <span class="n">gravity</span><span class="o">=</span><span class="mf">3.71</span><span class="p">))</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>230.02
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12336,20 +12218,41 @@ False</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">&#182;</a></h2><hr>
-<p>In this section, you learned the following concepts:</p>
-<ul>
-<li>Primary Python operators</li>
-<li>Assigning values to variables</li>
-<li>Statements</li>
-<li>Printing literal values or variables using the  <code>print()</code> function</li>
-<li>The importance of and how to comment code.</li>
-</ul>
-<p>In the next section, you will learn more about  scalars and  operations that are used on them.</p>
+<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
+<p>The function below calculates the total bill with tax and tip. How would we calculate the cost of a bill that's 84.53$ before tax and tip with a tax of 6% and no tip?</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">total_bill</span><span class="p">(</span><span class="n">bill</span><span class="p">,</span> <span class="n">tax</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">tip</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+  <span class="n">total_amount</span> <span class="o">=</span> <span class="p">(</span><span class="n">bill</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">tax</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">tip</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">total_amount</span>
+</pre></div>
+<p>A.</p>
+<div class="highlight"><pre><span></span><span class="n">total_bill</span><span class="p">(</span><span class="mf">84.53</span><span class="p">,</span><span class="n">tax</span><span class="o">=</span><span class="mf">0.06</span><span class="p">)</span>
+</pre></div>
+<p>B.</p>
+<div class="highlight"><pre><span></span><span class="n">total_bill</span><span class="p">(</span><span class="n">tax</span><span class="o">=</span><span class="mf">0.06</span><span class="p">,</span> <span class="n">bill</span><span class="o">=</span><span class="mf">84.53</span><span class="p">)</span>
+</pre></div>
+<p>C.</p>
+<div class="highlight"><pre><span></span><span class="n">total_bill</span><span class="p">(</span><span class="n">tax</span><span class="o">=</span><span class="mf">0.06</span><span class="p">,</span> <span class="mf">84.53</span><span class="p">)</span>
+</pre></div>
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">&#182;</a></h2><hr>
+<p>This chapter, you learned how to:</p>
+<ul>
+<li>Create a user-defined function. </li>
+<li>Specify default parameters in your functions. </li>
+<li>Change the default parameters when you use functions.</li>
+</ul>
+<p>The next chapter will introduce collections, which are variables that can store many values in one location. The next chapter will also go over ordered collections and for loops, which is one of the basic control flow structures that you can use in your code.</p>
+
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 
