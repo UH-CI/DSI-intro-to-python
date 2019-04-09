@@ -1,0 +1,22 @@
+{
+    "module": "Introduction to Python",
+    "question": "How would you italicize text in Markdown?",
+    "instruction": null,
+    "type": "checkbox",
+    "has_illustration": false,
+    "answers": [
+        "*text*",
+        "**text**",
+        "_text_",
+        "__text__"
+       
+    ],
+    "correct_answer": [0,2],
+    "explanations": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

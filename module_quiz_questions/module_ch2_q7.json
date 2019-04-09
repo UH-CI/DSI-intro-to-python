@@ -1,0 +1,19 @@
+{
+    "module": "Introduction to Python",
+    "question": "Select all of the options that represent valid comments in Python",
+    "instruction": null,
+    "type": "checkbox",
+    "has_illustration": false,
+    "answers": [
+        "<code>#Is this a comment?</code>",
+        "<code>##Is this a comment?</code>",
+        "<code>This is a short comment.</code>"
+    ],
+    "correct_answer": [0,1],
+    "explanations": [
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

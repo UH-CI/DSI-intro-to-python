@@ -1,0 +1,22 @@
+#input type question change to use numbers when refering to the quiz
+{
+    "module": "Introduction to Python",
+    "question": "Rewrite your answer to the quiz above which asks you compute the cost of a poke bowl using variables. Make sure that both solutions give the same result. Use your code to calculate the cost of making your own poke bowl if the price of poke goes down to 18 dollars a pound.",
+    "instruction": null,
+    "type": "checkbox",
+    "has_illustration": false,
+    "answers": [
+        "<code>1\n2\n3\n4\n5</code>",
+        "<code>print(1)\n2\n3\n4\nprint(5)</code>",
+        "<code>print(1)\nprint(2)\nprint(3)\nprint(4)\nprint(5)</code>",
+        "<code>1\n2\n3\n4\nprint(5)</code>"
+    ],
+    "correct_answer": [1,3],
+    "explanations": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

@@ -1,0 +1,22 @@
+{
+    "module": "Introduction to Python",
+    "question": "What does the followind code print? Execute the code in the cell below and select the appropriate answer.",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "75",
+        "3.14",
+        "122",
+        "Error"
+       
+    ],
+    "correct_answer": 0,
+    "explanations": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}
