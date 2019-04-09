@@ -1,0 +1,17 @@
+{
+    "module": "Introduction to Python",
+    "question": "True or False: Are these two variable labels equivalent? \n <code>`big_cat`</code> and <code>`Big_cat`</code>",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "True",
+        "False"
+    ],
+    "correct_answer": 1,
+    "explanations": [
+        null,
+        null
+    ],
+    "hints": []
+}

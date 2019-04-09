@@ -1,0 +1,19 @@
+{
+    "module": "Introduction to Python",
+    "question": "What does the following snippet of code print?<code>if nz_victim_age < 18:\n\tprint('Minor')\nelse:\n\tprint('Adult')</code>",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "'Minor'",
+        "'Adult'",
+        "39"
+    ],
+    "correct_answer": 1,
+    "explanations": [
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

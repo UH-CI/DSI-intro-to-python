@@ -1,0 +1,22 @@
+{
+    "module": "Introduction to Python",
+    "question": "Which of the following advance control structure combinations won't work?",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "Nesting dictionaries inside of a list.",
+        "Using lists as keys and values in a dictionary.",
+        "Using tuples as keys and values in a dictionary.",
+        "Nesting lists as values in dictionaries that are nested in a tuple."
+       
+    ],
+    "correct_answer": 1,
+    "explanations": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

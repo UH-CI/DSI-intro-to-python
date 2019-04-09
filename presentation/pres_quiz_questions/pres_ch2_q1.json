@@ -1,0 +1,21 @@
+{
+    "module": "Introduction to Python",
+    "question": "Which of the following numbers will print? <code>\n1\n2\nprint(3)\n5\n7\nprint(13)\n17\n19</code>",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "3 and 13",
+        "19",
+        "3,13 and 19",
+        "All of the numbers"
+    ],
+    "correct_answer": 3,
+    "explanations": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

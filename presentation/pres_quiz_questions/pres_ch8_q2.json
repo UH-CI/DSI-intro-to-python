@@ -1,0 +1,22 @@
+{
+    "module": "Introduction to Python",
+    "question": "For the following piece of code, how many times will the outer <code>for</code> loop iterate (<code>for suit in suits:</code>)?\n<code>suits = ["♤", "♡", "♢", "♧"]\ncard_numbers = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']\ncards = []\nfor suit in suits:\n\tfor number in card_numbers:\n\t\tcard = suit + number\n\t\tcards.append(card)",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "1",
+        "2",
+        "3",
+        "4"
+       
+    ],
+    "correct_answer": 3,
+    "explanations": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

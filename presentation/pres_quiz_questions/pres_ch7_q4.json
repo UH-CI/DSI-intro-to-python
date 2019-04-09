@@ -1,0 +1,22 @@
+{
+    "module": "Introduction to Python",
+    "question": "How do you index the second element in the third tuple (18221.299) in the nested collection below?\n<code>quarterly_us_gdp = [(16569.591, 16637.926, 16848.748, 17083.137),\n(17102.932, 17425.766, 17719.836, 17838.454),\n(17970.422, 18221.299, 18331.093, 18354.372),\n(18409.13, 18640.732, 18799.648, 18979.245),\n(19162.55, 19359.123, 19588.074, 19831.829)]</code>",
+    "instruction": null,
+    "type": "checkbox",
+    "has_illustration": false,
+    "answers": [
+        "<code>quarterly_us_gdp[2][3]</code>",
+        "<code>quarterly_us_gdp[-3][-2]</code>",
+        "<code>quarterly_us_gdp[-3][-3]</code>",
+        "<code>quarterly_us_gdp[2][1]</code>"
+       
+    ],
+    "correct_answer": [3,4],
+    "explanations": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

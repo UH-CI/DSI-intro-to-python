@@ -1,0 +1,20 @@
+{
+    "module": "Introduction to Python",
+    "question": "The function below calculates the total bill with tax and tip. How would we calculate the cost of a bill that's 84.53$ before tax and tip with a tax of 6% and no tip?\n<code>def total_bill(bill, tax=0, tip=0):\n\ttotal_amount = (bill * (1 + tax)) * (tip + 1)\n\treturn total_amount</code>",
+    "instruction": null,
+    "type": "checkbox",
+    "has_illustration": false,
+    "answers": [
+        "<code>total_bill(84.53,tax=0.06)</code>",
+        "<code>total_bill(tax=0.06, bill=84.53)</code>",
+        "<code>total_bill(tax=0.06, 84.53)</code>"
+       
+    ],
+    "correct_answer": [0,1],
+    "explanations": [
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

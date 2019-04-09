@@ -1,0 +1,20 @@
+{
+    "module": "Introduction to Python",
+    "question": "Which of the following pieces of code only prints the grades of each student in <code>gradebook</code>?",
+    "instruction": null,
+    "type": "checkbox",
+    "has_illustration": false,
+    "answers": [
+        "<code>for grade in gradebook:\n\tprint(grade)</code>",
+        "<code>for grade in gradebook.values():\n\tprint(grade)</code>",
+        "<code>for grade, student in gradebook.items():\n\tprint(grade)</code>"
+       
+    ],
+    "correct_answer": [1,2],
+    "explanations": [
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

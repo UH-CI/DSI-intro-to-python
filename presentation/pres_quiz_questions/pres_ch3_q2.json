@@ -1,0 +1,23 @@
+{
+    "module": "Introduction to Python",
+    "question": "How do you assign the following string of characters into a variable called `nz_species`?\nMako Shark",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "<code>nz_victim_age == 39</code>",
+        "<code>nz_victim_age >= 39</code>",
+        "<code>nz_victim_age <= 39</code>",
+        "<code>nz_victim_age != 40</code>",
+        "<code>nz_victim_age < 40</code>"
+    ],
+    "correct_answer": 4,
+    "explanations": [
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}
