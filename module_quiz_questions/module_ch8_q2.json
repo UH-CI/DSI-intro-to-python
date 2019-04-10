@@ -1,0 +1,22 @@
+{
+    "module": "Introduction to Python",
+    "question": "We can see that the `cards`  list contains the list of all possible combinations in a deck of cards. What if we are interested in printing each card suit per line. We would like the desired outcome to look like the following:",
+    "instruction": null,
+    "type": "checkbox",
+    "has_illustration": false,
+    "answers": [
+        "<code>i=0\nfor card in cards:\n\tprint(card, end=\"\\t\")\n\ti += 1\n\tif i == 13:\n\t\tprint()\n\t\ti=0</code>",
+        "<code>for card in cards:\n\tprint(card, end=\"\\t\")\n\tif i == 13:\n\t\tprint()</code>",
+        "<code>i=1\nfor card in cards:\n\tif i != 13:\n\t\tprint(card, end=\"\\t\")\n\t\ti += 1\n\telse:\n\t\tprint(card, end=\"\\n\")\n\t\ti=1</code>",
+        "<code>for card in cards:\n\tfor a in card:\n\t\tprint(a, end=\"\\t\")\n\tprint(\"\\n\")</code>"
+       
+    ],
+    "correct_answer": [0,2],
+    "explanations": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

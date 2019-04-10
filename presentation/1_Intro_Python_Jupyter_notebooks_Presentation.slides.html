@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>4_Intro_Python_Importing_Modules_Presentation slides</title>
+<title>1_Intro_Python_Jupyter_notebooks_Presentation slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11905,10 +11905,21 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Modules">Modules<a class="anchor-link" href="#Modules">&#182;</a></h1><hr>
+<h1 id="Introduction-to-Python">Introduction to Python<a class="anchor-link" href="#Introduction-to-Python">&#182;</a></h1><hr>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Data-Science">Data Science<a class="anchor-link" href="#Data-Science">&#182;</a></h1><hr>
 <ul>
-<li>Modules are Python files that contain functionality, which can be readily used. </li>
-<li>There are plenty of pre-existing and well-documented modules that apply to very broad topics, from astronomy to  economics or marketing.</li>
+<li>Data science is a field of study where meaningful conclusions are drawn from analyzing large data sets. </li>
+<li>The conclusions extrapolated from these data sets have great potential to benefit many people and shape society. </li>
+<li>Data science relies heavily on the use of programming for analyzing data</li>
+<li>This module will introduce the foundations of Python, which is one of the most useful tools in the data scientist's tool belt.</li>
 </ul>
 
 </div>
@@ -11918,11 +11929,11 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Packages">Packages<a class="anchor-link" href="#Packages">&#182;</a></h2><hr>
+<h1 id="Why-Python?">Why Python?<a class="anchor-link" href="#Why-Python?">&#182;</a></h1><hr>
 <ul>
-<li>Modules are organized into packages, also known as libraries.</li>
-<li>Domain-specific packages need to be downloaded and installed manually.  </li>
-<li>The Anaconda distribution of Python already comes with many commonly used packages.</li>
+<li>Python is an excellent programming language for data science because it is efficient, relatively easy to learn and open-source.</li>
+<li>Although this module focuses on Python applied to data science, Python is a great programming language for a wide variety of other applications. </li>
+<li>For example, Python can also be used to develop video games, model biological and biochemical processes, develop web based applications and much more!</li>
 </ul>
 
 </div>
@@ -11932,10 +11943,13 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Installing-Packages-with-Anaconda">Installing Packages with Anaconda<a class="anchor-link" href="#Installing-Packages-with-Anaconda">&#182;</a></h3><hr>
+<h1 id="Getting-Started">Getting Started<a class="anchor-link" href="#Getting-Started">&#182;</a></h1><hr>
+<h2 id="Using-Jupyter-Notebooks">Using Jupyter Notebooks<a class="anchor-link" href="#Using-Jupyter-Notebooks">&#182;</a></h2><hr>
 <ul>
-<li>Open the terminal and enter:
-<pre><code>conda install package-name</code></pre>
+<li>This module exists as a Jupyter notebook<ul>
+<li>An open-source web based application</li>
+<li>create documents that combine both text and code cells.</li>
+</ul>
 </li>
 </ul>
 
@@ -11946,375 +11960,29 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Importing-Modules">Importing Modules<a class="anchor-link" href="#Importing-Modules">&#182;</a></h2><hr>
-<ul>
-<li>The following imports all functionalities in a module.</li>
-</ul>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">module_name</span>
-</pre></div>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
-<ul>
-<li>For example, to import all the functionalities in the <code>math</code> module, we can do the following:</li>
-</ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Accessing-Functionality">Accessing Functionality<a class="anchor-link" href="#Accessing-Functionality">&#182;</a></h3><hr>
-<ul>
-<li>To access and use a functionality from this module, we use the syntax below.</li>
-</ul>
-<div class="highlight"><pre><span></span><span class="n">module_name</span><span class="o">.</span><span class="n">functionality_name</span>
-</pre></div>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
-<ul>
-<li><code>math.pi</code> will give us the value of the number $\pi$, which can be used to calculate the area of a circle with a radius, $r$, of 5 inches.</li>
-</ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">area</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="mi">5</span> <span class="o">**</span> <span class="mi">2</span>
-<span class="n">area</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[2]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>78.53981633974483</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
-<p>How would you print the speed of light, <code>c</code> from <code>scipy.constants</code>?</p>
-<p>A.</p>
-<div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">scipy</span><span class="o">.</span><span class="n">constants</span><span class="o">.</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-<p>B.</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.constants</span>
-<span class="n">c</span>
-</pre></div>
-<p>C.</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.constants</span>
-<span class="k">print</span><span class="p">(</span><span class="n">scipy</span><span class="o">.</span><span class="n">constants</span><span class="o">.</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-<p>D.</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.constants</span>
-<span class="n">scipy</span><span class="o">.</span><span class="n">constants</span><span class="o">.</span><span class="n">c</span>
-</pre></div>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Functions-in-Modules">Functions in Modules<a class="anchor-link" href="#Functions-in-Modules">&#182;</a></h2><hr>
-<ul>
-<li>The most valuable aspect of a module is the functions it includes. </li>
-<li>We have used functions before, for example <code>print()</code>. </li>
-<li>Here, we will discuss the topic further and will continue to view functions as a black box. </li>
-</ul>
-<p><img src="images/importing_modules/black_box.JPG" alt="drawing" style="width:500px;"/></p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Calling-Functions">Calling Functions<a class="anchor-link" href="#Calling-Functions">&#182;</a></h3><hr>
-<ul>
-<li>We <em>call</em> a function by adopting the same syntax we used earlier with <code>print()</code>.</li>
-</ul>
-<div class="highlight"><pre><span></span><span class="n">function_name</span><span class="p">()</span>
-</pre></div>
-<ul>
-<li>While some functions are self sufficient, some functions require input to operate on.</li>
-<li>In fact, some functions may require multiple inputs, or <em>parameters</em> as they are called. </li>
-<li>Parameters are passed to function inside the parentheses and are separated using commas.</li>
-</ul>
-<div class="highlight"><pre><span></span><span class="n">function_name</span><span class="p">(</span><span class="n">parameter_1</span><span class="p">,</span> <span class="o">...</span> <span class="p">)</span>
-</pre></div>
-<ul>
-<li>Python matches parameters based on their positions, so the order that you pass the parameters to the function matter.</li>
-<li>We need to prefix functions defined in a module by the module name or its alias.</li>
-</ul>
-<div class="highlight"><pre><span></span><span class="n">module_name</span><span class="o">.</span><span class="n">function_name</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
-<ul>
-<li>We can compute the square root of the value 225 using the function <code>sqrt()</code> from the <code>math</code> module.</li>
-</ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-<span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">225</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[3]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>15.0</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Example-5">Example 5<a class="anchor-link" href="#Example-5">&#182;</a></h3><hr>
-<ul>
-<li>The <code>round()</code> function will round a float number to a specified number of decimal points. </li>
-<li><code>round()</code> will take two parameters:<ul>
-<li>The first is the float number that you're trying to round.</li>
-<li>The second parameter is the number of decimal places you are rounding to. </li>
-</ul>
+<h3 id="Text-Cells">Text Cells<a class="anchor-link" href="#Text-Cells">&#182;</a></h3><ul>
+<li>Text cells are commonly formatted using Markdown. </li>
+<li><p>The <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a> is a great reference when using Markdown.</p>
+</li>
+<li><p>To create a new cell, click the plus sign in the tool bar and make sure the toolbar says Markdown. 
+<img src="images/Jupyter_notebooks/create_text_cell.png" alt="Creating a text cell"></p>
 </li>
 </ul>
 
 </div>
 </div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="mf">123.7897917498714094</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[0]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>123.79</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>However, if we mistakenly put 3 first and then 123.7897917498714094, we will get an error.</li>
+<li>To edit a cell, double click on it and type text with the desired formatting. </li>
+<li>For example, if you want to use the largest header, you could type <code># Header One</code> into a text cell to yield: </li>
 </ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mf">123.7897917498714094</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-3-a45eadc6fa3d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>round<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">123.7897917498714094</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">TypeError</span>: &#39;float&#39; object cannot be interpreted as an integer</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Use the <code>help()</code> function or look up the function's documentation to find out what order the parameters should be in.</li>
+<h1 id="Header-One.">Header One.<a class="anchor-link" href="#Header-One.">&#182;</a></h1><ul>
+<li>As another example, you can create a strikethrough text using tildes. Typing <code>~~ strikethrough ~~</code> will translate into: ~~ strikethrough ~~.</li>
 </ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">round</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Help on built-in function round in module builtins:
-
-round(...)
-    round(number[, ndigits]) -&gt; number
-    
-    Round a number to a given precision in decimal digits (default 0 digits).
-    This returns an int when called with one argument, otherwise the
-    same type as the number. ndigits may be negative.
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
-<p>If you imported the math module with the following code:</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-</pre></div>
-<p>How can you use the <code>remainder()</code> function to find the remainder of 47 divided by 17?</p>
-<p>A. <code>remainder(47, 17)</code></p>
-<p>B. <code>math.remainder(47: 17)</code></p>
-<p>C. <code>math.remainder(47, 17)</code></p>
-<p>D. <code>m.remainder(47, 17)</code></p>
-<p>E. <code>m.remainder(47; 47)</code></p>
 
 </div>
 </div>
@@ -12323,19 +11991,41 @@ round(...)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">&#182;</a></h2><hr>
-<p>By now you should be able to:</p>
 <ul>
-<li>Install packages from open source.</li>
-<li>Import modules into programs.</li>
-<li>Use functionality from within a module.</li>
-<li>Use functions that take multiple parameters.</li>
+<li>Click the run button at the top of the tool bar to confirm any changes. </li>
+<li>You can also press <strong>SHIFT+ENTER</strong> to confirm changes.</li>
 </ul>
-<p>The next chapter will go over how to create user-defined functions. We will go over the basic syntax of a function and relate it to how you can write your own functions. Being able to create user-defined functions can save you time and will increase the readability of your code.</p>
+<p><img src="images/Jupyter_notebooks/run_text_cell.png" alt="Running a text cell"></p>
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Code-Cells">Code Cells<a class="anchor-link" href="#Code-Cells">&#182;</a></h3><ul>
+<li>New cells are by default <code>code</code> cells, i.e., the dropdown value is automatically set to code.</li>
+</ul>
+<p><img src="images/Jupyter_notebooks/create_code_cell.png" alt="Creating a code cell"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>You can run code cells by clicking the run button at the top of the tool bar. </li>
+<li>You can also run code cells by selecting the cell (clicking inside the cell) and then hitting <strong>SHIFT+ENTER</strong></li>
+<li>Running code cells will execute all the code in the cell.</li>
+</ul>
+<p><img src="images/Jupyter_notebooks/run_code_cell.png" alt="Running a code cell"></p>
+
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 
