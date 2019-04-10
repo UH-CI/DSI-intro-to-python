@@ -1,0 +1,22 @@
+{
+    "module": "Introduction to Python",
+    "question": "Which of the following data types cannot be used as keys? If in doubt, try creating an example dictionary with these types as keys and verify which ones are valid key data types.",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "Strings",
+        "Floats",
+        "Tuples",
+        "Lists"
+       
+    ],
+    "correct_answer": 2,
+    "explanations": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

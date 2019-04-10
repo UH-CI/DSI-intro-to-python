@@ -1,0 +1,20 @@
+{
+    "module": "Introduction to Python",
+    "question": "Which of the following functions will not compile?",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "<code>def present_value(future_value, interest=0, time_periods):\n\treturn future_value / (1 + interest) ** time_periods</code>",
+        "<code>def present_value(future_value, interest=0, time_periods=0):\n\treturn future_value / (1 + interest) ** time_periods</code>",
+        "<code>def present_value(future_value, time_periods, interest=0):\n\treturn future_value / (1 + interest) ** time_periods</code>"
+       
+    ],
+    "correct_answer": 0,
+    "explanations": [
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}
