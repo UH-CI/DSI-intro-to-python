@@ -1,0 +1,22 @@
+{
+    "module": "Introduction to Python",
+    "question": "What are the two ways you can refer to the second element in the following list?\n<code>card_suits = ['spade', 'heart', 'diamond', 'club']</code>",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "<code>card_suits[2]</code> and <code>card_suits[-3]</code>",
+        "<code>card_suits[1]</code> and <code>card_suits[-3]</code>",
+        "<code>card_suits[1]</code> and <code>card_suits[-2]</code>",
+        "<code>card_suits[2]</code> and <code>card_suits[-2]</code>"
+       
+    ],
+    "correct_answer": 1,
+    "explanations": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

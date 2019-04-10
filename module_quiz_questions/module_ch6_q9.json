@@ -1,0 +1,18 @@
+{
+    "module": "Introduction to Python",
+    "question": "True or False: You can refer to elements in a tuple the same way you do with a list.",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "True",
+        "False"
+       
+    ],
+    "correct_answer": 0,
+    "explanations": [
+        null,
+        null
+    ],
+    "hints": []
+}

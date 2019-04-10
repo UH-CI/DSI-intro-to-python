@@ -1,0 +1,22 @@
+{
+    "module": "Introduction to Python",
+    "question": "`visitor_expenditures_2016` is a list containing quarterly Hawaii visitor expenditures in millions of US dollars. Which snippet of code correctly prints the values in `visitor_expenditures_2016` in Jordanian Dinars?\n<code>visitor_expenditures_2016 = [3744.7, 3958.4, 3990.4, 4059.9]</code>\nNote: 1 Jordanian Dinar = 1.41 US dollars",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "<code>for 2016_expenditure in visitor_expenditures_2016\n\texpenditure*1000000/1.41</code>",
+        "<code>for 2016_expenditure in visitor_expenditures_2016:\n\t2016_expenditure = 2016_expenditure*1000000/1.41\n\tprint(2016_expenditure)</code>",
+        "<code>for expenditure in visitor_expenditures_2016:\n\tprint(expenditure*1000000/1.41)</code>",
+        "<code>for expenditure in visitor_expenditures_2016\n\tprint(expenditure*1000000/1.41)</code>"
+       
+    ],
+    "correct_answer": 2,
+    "explanations": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

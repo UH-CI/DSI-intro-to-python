@@ -1,0 +1,18 @@
+{
+    "module": "Introduction to Python",
+    "question": "True or false: When looping through a dictionary, the items will be iterated over in the same order that they were added to the dictionary.",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "True",
+        "False"
+       
+    ],
+    "correct_answer": 1,
+    "explanations": [
+        null,
+        null
+    ],
+    "hints": []
+}

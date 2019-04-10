@@ -1,0 +1,19 @@
+{
+    "module": "Introduction to Python",
+    "question": "True or False: Python lists must contain only one data type.",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "True",
+        "False"
+
+       
+    ],
+    "correct_answer": 1,
+    "explanations": [
+        null,
+        null
+    ],
+    "hints": []
+}

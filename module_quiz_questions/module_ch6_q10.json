@@ -1,0 +1,18 @@
+{
+    "module": "Introduction to Python",
+    "question": "True or False: You can \"change\" a tuple by redefining its variable name.",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "True",
+        "False"
+       
+    ],
+    "correct_answer": 0,
+    "explanations": [
+        null,
+        null
+    ],
+    "hints": []
+}
