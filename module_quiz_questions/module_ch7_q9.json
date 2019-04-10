@@ -1,0 +1,22 @@
+{
+    "module": "Introduction to Python",
+    "question": "Given the <code>populations</code> dictionary above, which of the following code snippets prints the pair of cities and their population in 2000, one per line?",
+    "instruction": null,
+    "type": "checkbox",
+    "has_illustration": false,
+    "answers": [
+        "<code>for a,b in populations:\n\tpopulations[a][b][2000]</code>",
+        "<code>for a,b in populations:\n\tpopulations[b][a][2000]</code>",
+        "<code>for a in populations:\n\tfor b in populations[a]:\n\t\tprint(b, populations[a][b][2000])</code>",
+        "<code>for a in populations.values():\n\tfor b in a:\n\t\tprint(b, a[b][2000])</code>"
+       
+    ],
+    "correct_answer": [2,3],
+    "explanations": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}

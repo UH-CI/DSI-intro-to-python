@@ -1,0 +1,22 @@
+{
+    "module": "Introduction to Python",
+    "question": "Given the dictionary below representing the population sizes (in thousands) of two cities in each of Australia, Japan and the U.S., which of the following expressions prints the population size of Tokyo in 2018?\n<code>populations = { \"USA\": {\n\t\"Las Vegas\": {2000: 1326 , 2018: 3173},\n\t\"New York\": {2000: 17813 , 2018: 18819 },\n },\n\n \"Australia\":{\n\t\"Brisbane\": {2000: 1611, 2018: 2338},\n\t\"Sydney\": {2000: 2780 , 2018: 4792}\n },\n\n \"Japan\":{\n\t\"Tokyo\": {2000: 34450, 2018: 37468},\n\t\"Osaka\": {2000: 18660 , 2018: 19281}\n }\n}</code>",
+    "instruction": null,
+    "type": "radio",
+    "has_illustration": false,
+    "answers": [
+        "<code>populations[\"Japan\", \"Tokyo\", 2018]</code>",
+        "<code>populations[\"Japan\"][\"Tokyo\"][2018]</code>",
+        "<code>populations[\"Japan\"][\"Tokyo\"][\"2018\"]</code>",
+        "<code>populations[2][\"0\"][1]</code>"
+       
+    ],
+    "correct_answer": 1,
+    "explanations": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "hints": []
+}
