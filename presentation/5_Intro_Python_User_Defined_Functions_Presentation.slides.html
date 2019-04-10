@@ -11907,8 +11907,15 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="User-Defined-Functions">User Defined Functions<a class="anchor-link" href="#User-Defined-Functions">&#182;</a></h1><hr>
 <ul>
-<li>Functions are named blocks of code, which carry out a specific task, and can take inputs and return values.</li>
-<li>Defining a frequently used block of code as a function increases script readability and efficiency.  </li>
+<li>Functions are blocks of code that:<ul>
+<li>Carry out a specific task.</li>
+<li>Take inputs.</li>
+<li>Return values.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Defining functions increases script readability and efficiency.  </li>
 </ul>
 
 </div>
@@ -11920,12 +11927,16 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h2><hr>
 <ul>
-<li><p>The function definition starts with the keyword, <code>def</code>, followed by its name and a parenthesized list of parameters your function will use.</p>
+<li>Functions start with <code>def</code>, followed by its name and a parenthesized list of parameters.</li>
+</ul>
+<ul>
+<li>The body is the following indented block of code.<ul>
+<li>Run each time the function is called.</li>
+</ul>
 </li>
-<li><p>The body of a function is the indented block of code that follows the definition and is run each time the function is called.</p>
-</li>
-<li><p>If we want the function to return something, i.e. give an output after it is called, then we use the <code>return</code> keyword followed by a return value.</p>
-</li>
+</ul>
+<ul>
+<li>If the function returns something then we use <code>return</code> followed by a return value. </li>
 </ul>
 <p><img src="images/user_defined_functions/syntax.png" alt="drawing" style="width:500px;"/></p>
 
@@ -11938,8 +11949,10 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Local-Variables">Local Variables<a class="anchor-link" href="#Local-Variables">&#182;</a></h3><hr>
 <ul>
-<li>Any variable that is defined or modified inside a function is a local variable. </li>
-<li>Local variables in functions are independent from variables outside the function.</li>
+<li>Variable defined or modified inside a function. </li>
+</ul>
+<ul>
+<li>Local variables are independent from variables outside the function.</li>
 </ul>
 
 </div>
@@ -11951,7 +11964,10 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
 <ul>
-<li>Here we define the <code>fahr_to_celsius()</code> function and use it to determine what 250 Fahrenheit is in Celsius.</li>
+<li>Here we define the <code>fahr_to_celsius()</code> function</li>
+</ul>
+<ul>
+<li>Determine what 250 Fahrenheit is in Celsius.</li>
 </ul>
 
 </div>
@@ -11998,8 +12014,12 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Modifying-Local-Variables-Outside-Functions">Modifying Local Variables Outside Functions<a class="anchor-link" href="#Modifying-Local-Variables-Outside-Functions">&#182;</a></h4><hr>
 <ul>
-<li>After <code>fahr_to_celsius(250)</code>, the expected value of <code>celsius</code> is 121.11 degrees Celsius. Let's try to add 273.15 to this <code>celsius</code>, which converts <code>celsius</code> to Kelvin.</li>
+<li>The expected value of <code>celsius</code> is 121.11 degrees Celsius. </li>
+</ul>
+<ul>
+<li>Let's add 273.15 and <code>celsius</code>, which converts <code>celsius</code> to Kelvin.</li>
 </ul>
 
 </div>
@@ -12040,6 +12060,20 @@ a.anchor-link {
 </div>
 </div>
 
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>celsius</code> is a local variable to <code>fahr_to_celsius()</code>.</li>
+</ul>
+<ul>
+<li>Cannot be used outside <code>fahr_to_celsius()</code>.</li>
+</ul>
+
+</div>
+</div>
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12066,11 +12100,13 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Default-Parameters">Default Parameters<a class="anchor-link" href="#Default-Parameters">&#182;</a></h2><hr>
 <ul>
-<li><p>You can define a <em>default value</em> for Python to use when a parameter is not specified.</p>
-</li>
-<li><p>To define a default parameter, simply specify the default parameter in the function definition with <code>=</code>.</p>
-</li>
-<li>Make sure that your default parameters come after the parameters without default values.</li>
+<li><em>Default value</em> used when a parameter is not specified.</li>
+</ul>
+<ul>
+<li>Specify the default parameter in the function definition with <code>=</code>. </li>
+</ul>
+<ul>
+<li>Make sure default parameters come after the parameters without default values.</li>
 </ul>
 <p><img src="images/user_defined_functions/default.jpg" alt="drawing" style="width:550px;"/></p>
 
@@ -12083,8 +12119,10 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
 <ul>
-<li>We can write a function that calculates weight based off of mass and gravity and set the default gravity to 9.81 $m/s^2$.</li>
-<li>Since only mass was passed to <code>weight()</code>,  the <code>weight()</code> function used the default gravity, which was 9.81 $m/s^2$. </li>
+<li>Function that calculates weight based off of mass and gravity.<ul>
+<li>Set the default gravity to 9.81 $m/s^2$.</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -12125,6 +12163,17 @@ a.anchor-link {
 </div>
 </div>
 
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>weight()</code> used the default gravity, which was 9.81 $m/s^2$. </li>
+</ul>
+
+</div>
+</div>
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12132,7 +12181,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Changing-Default-Parameters">Changing Default Parameters<a class="anchor-link" href="#Changing-Default-Parameters">&#182;</a></h3><hr>
 <ul>
-<li>To change keyword parameters, you use the <code>=</code> operator to specify the value that you want to use instead when you call the function. </li>
+<li>Use the <code>=</code> operator to specify the new value. </li>
 </ul>
 <p><img src="images/user_defined_functions/changing_default.jpg" alt="drawing" style="width:600px;"/></p>
 
@@ -12175,8 +12224,10 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>You can also use keyword parameters to specify the parameters that do not have default values as well. </li>
-<li>Just make sure your positional parameters come before the keyword parameters.</li>
+<li>Keyword parameters can be used for parameters without default values. </li>
+</ul>
+<ul>
+<li>Make sure positional parameters come before keyword parameters.</li>
 </ul>
 <p><img src="images/user_defined_functions/keyword_parameter.jpg" alt="drawing" style="width:550px;"/></p>
 
