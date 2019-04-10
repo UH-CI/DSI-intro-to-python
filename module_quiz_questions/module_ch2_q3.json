@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "Which of the following code snippets print only 1 and 5?",
     "instruction": null,
     "type": "checkbox",

@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "How do tuples differ from lists?",
     "instruction": null,
     "type": "radio",

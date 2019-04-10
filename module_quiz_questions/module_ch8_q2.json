@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "We can see that the `cards`  list contains the list of all possible combinations in a deck of cards. What if we are interested in printing each card suit per line. We would like the desired outcome to look like the following:",
     "instruction": null,
     "type": "checkbox",

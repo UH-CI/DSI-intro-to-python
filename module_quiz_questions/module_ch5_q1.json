@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "True or False: The following two functions will always return the same value.\nFunction 1:\n<code>def present_value(future_value, interest, time_periods)\n\treturn future_value / (1 + interest) ** time_periods\n</code>Function 2:\n<code>def present_value(future_value, interest, time_periods)\n\tpv = future_value / (1 + interest) ** time_periods\n\treturn pv</code>",
     "instruction": null,
     "type": "radio",

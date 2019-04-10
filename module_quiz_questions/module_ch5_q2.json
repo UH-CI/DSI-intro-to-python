@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "Which of the following functions will not compile?",
     "instruction": null,
     "type": "radio",

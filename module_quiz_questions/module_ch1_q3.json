@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "What does the followind code print? Execute the code in the cell below and select the appropriate answer.",
     "instruction": null,
     "type": "radio",

@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "True or False: You can refer to elements in a tuple the same way you do with a list.",
     "instruction": null,
     "type": "radio",

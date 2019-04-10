@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "Which one of the solutions below returns from the dictionary <code>ghg_2014</code> India's greenhouse gas emissions (numbers are in thousands of metric tons of carbon)?\n<code>ghg_2014 = {'china' : 2806634, 'united states of america' : 1432855, 'india' : 610411, 'russian federation' : 465052, 'japan' : 331074}</code>",
     "instruction": null,
     "type": "radio",

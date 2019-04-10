@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "True or False: You can \"change\" a tuple by redefining its variable name.",
     "instruction": null,
     "type": "radio",

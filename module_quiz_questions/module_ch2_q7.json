@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "Select all of the options that represent valid comments in Python",
     "instruction": null,
     "type": "checkbox",

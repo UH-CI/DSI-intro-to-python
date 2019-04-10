@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "If you imported the math module with the following code:\n<code>import math</code>\nHow can you use the <code>remainder()</code> function to find the remainder of 47 divided by 17?",
     "instruction": null,
     "type": "radio",

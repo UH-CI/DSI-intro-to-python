@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "True or false, logical operator `not` tests whether a condition is met?",
     "instruction": null,
     "type": "radio",

@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "The following list shows monthly inflation rates from January 2018 to November 2018. How do you slice the first six months of data from this list?\n<code>monthly_inflation = [2.04, 2.10, 2.09, 2.13, 2.14, 2.12, 2.12, 2.10, 2.12, 2.11, 2.01]</code>",
     "instruction": null,
     "type": "checkbox",

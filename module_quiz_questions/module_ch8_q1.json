@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "Below is an <code>if-else</code> statement nested in a <code>for</code> loop applied to the <code>ghg_2014</code> dictionary from Chapter 7. How many countries will be printed?\n<code>ghg_2014 = {'china' : 2806634, 'united states of america' : 1432855, 'india' : 610411, 'russian federation' : 465052, 'japan' : 331074}\nfor country, emission in ghg_2014.items():\n\tif emission > 500000:\n\t\tprint(country)</code>",
     "instruction": null,
     "type": "radio",

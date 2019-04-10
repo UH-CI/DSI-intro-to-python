@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "Let's say the the December value was improperly computed; it should have been 1.81%. Which of the following expression correctly update the value?",
     "instruction": null,
     "type": "checkbox",

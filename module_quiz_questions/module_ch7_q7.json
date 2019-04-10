@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "Which of the following advance control structure combinations won't work?",
     "instruction": null,
     "type": "radio",

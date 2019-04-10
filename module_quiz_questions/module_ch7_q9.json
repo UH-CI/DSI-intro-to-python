@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "Given the <code>populations</code> dictionary above, which of the following code snippets prints the pair of cities and their population in 2000, one per line?",
     "instruction": null,
     "type": "checkbox",

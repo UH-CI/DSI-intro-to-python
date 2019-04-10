@@ -1,5 +1,5 @@
 {
-    "module": "Introduction to Python",
+    "module": "intro_to_python",
     "question": "What are the two ways you can refer to the second element in the following list?\n<code>card_suits = ['spade', 'heart', 'diamond', 'club']</code>",
     "instruction": null,
     "type": "radio",
