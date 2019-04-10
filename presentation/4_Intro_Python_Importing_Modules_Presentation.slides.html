@@ -11907,8 +11907,13 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Modules">Modules<a class="anchor-link" href="#Modules">&#182;</a></h1><hr>
 <ul>
-<li>Modules are Python files that contain functionality, which can be readily used. </li>
-<li>There are plenty of pre-existing and well-documented modules that apply to very broad topics, from astronomy to  economics or marketing.</li>
+<li>Modules contain functionality.</li>
+</ul>
+<ul>
+<li>Pre-existing modules that apply to very broad topics:<ul>
+<li>Ex. astronomy to economics or marketing.</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -11920,9 +11925,13 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Packages">Packages<a class="anchor-link" href="#Packages">&#182;</a></h2><hr>
 <ul>
-<li>Modules are organized into packages, also known as libraries.</li>
-<li>Domain-specific packages need to be downloaded and installed manually.  </li>
-<li>The Anaconda distribution of Python already comes with many commonly used packages.</li>
+<li>Modules are organized into packages, aka libraries.</li>
+</ul>
+<ul>
+<li>Some packages need to be downloaded and installed manually.  </li>
+</ul>
+<ul>
+<li>The Anaconda already comes with many commonly used packages.</li>
 </ul>
 
 </div>
@@ -11934,10 +11943,10 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Installing-Packages-with-Anaconda">Installing Packages with Anaconda<a class="anchor-link" href="#Installing-Packages-with-Anaconda">&#182;</a></h3><hr>
 <ul>
-<li>Open the terminal and enter:
-<pre><code>conda install package-name</code></pre>
-</li>
+<li>Open the terminal and enter:</li>
 </ul>
+
+<pre><code>conda install package-name</code></pre>
 
 </div>
 </div>
@@ -11962,7 +11971,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
 <ul>
-<li>For example, to import all the functionalities in the <code>math</code> module, we can do the following:</li>
+<li>To import all the functionalities in the <code>math</code> module:</li>
 </ul>
 
 </div>
@@ -11987,7 +11996,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Accessing-Functionality">Accessing Functionality<a class="anchor-link" href="#Accessing-Functionality">&#182;</a></h3><hr>
 <ul>
-<li>To access and use a functionality from this module, we use the syntax below.</li>
+<li>To access and use a functionality from a module:</li>
 </ul>
 <div class="highlight"><pre><span></span><span class="n">module_name</span><span class="o">.</span><span class="n">functionality_name</span>
 </pre></div>
@@ -12001,7 +12010,10 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
 <ul>
-<li><code>math.pi</code> will give us the value of the number $\pi$, which can be used to calculate the area of a circle with a radius, $r$, of 5 inches.</li>
+<li><code>math.pi</code> will give us the value of the number $\pi$.</li>
+</ul>
+<ul>
+<li>Can be used to calculate the area of a circle with a radius of 5 inches.</li>
 </ul>
 
 </div>
@@ -12046,7 +12058,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Quiz">Quiz<a class="anchor-link" href="#Quiz">&#182;</a></h3><hr>
-<p>How would you print the speed of light, <code>c</code> from <code>scipy.constants</code>?</p>
+<p>How would you print the speed of light, <code>c</code>, from <code>scipy.constants</code>?</p>
 <p>A.</p>
 <div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">scipy</span><span class="o">.</span><span class="n">constants</span><span class="o">.</span><span class="n">c</span><span class="p">)</span>
 </pre></div>
@@ -12072,11 +12084,15 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Functions-in-Modules">Functions in Modules<a class="anchor-link" href="#Functions-in-Modules">&#182;</a></h2><hr>
 <ul>
-<li>The most valuable aspect of a module is the functions it includes. </li>
-<li>We have used functions before, for example <code>print()</code>. </li>
-<li>Here, we will discuss the topic further and will continue to view functions as a black box. </li>
+<li>The most valuable aspect of modules: functions. </li>
 </ul>
-<p><img src="images/importing_modules/black_box.JPG" alt="drawing" style="width:500px;"/></p>
+<ul>
+<li>We have used functions before, ex. <code>print()</code>. </li>
+</ul>
+<ul>
+<li>Continue to view functions as a black box. </li>
+</ul>
+<p><img src="images/importing_modules/black_box.JPG" alt="drawing" style="width:550px;"/></p>
 
 </div>
 </div>
@@ -12087,20 +12103,41 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Calling-Functions">Calling Functions<a class="anchor-link" href="#Calling-Functions">&#182;</a></h3><hr>
 <ul>
-<li>We <em>call</em> a function by adopting the same syntax we used earlier with <code>print()</code>.</li>
+<li>We <em>call</em> a function:</li>
 </ul>
 <div class="highlight"><pre><span></span><span class="n">function_name</span><span class="p">()</span>
 </pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Parameters">Parameters<a class="anchor-link" href="#Parameters">&#182;</a></h4><hr>
 <ul>
-<li>While some functions are self sufficient, some functions require input to operate on.</li>
-<li>In fact, some functions may require multiple inputs, or <em>parameters</em> as they are called. </li>
-<li>Parameters are passed to function inside the parentheses and are separated using commas.</li>
+<li>Some functions will require an input or multiple inputs, which are called parameters.</li>
+</ul>
+<ul>
+<li>Parameters are placed in the parentheses and are separated with commas.</li>
+</ul>
+<ul>
+<li>The order of paramters matter.</li>
 </ul>
 <div class="highlight"><pre><span></span><span class="n">function_name</span><span class="p">(</span><span class="n">parameter_1</span><span class="p">,</span> <span class="o">...</span> <span class="p">)</span>
 </pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Functions-from-Modules">Functions from Modules<a class="anchor-link" href="#Functions-from-Modules">&#182;</a></h4><hr>
 <ul>
-<li>Python matches parameters based on their positions, so the order that you pass the parameters to the function matter.</li>
-<li>We need to prefix functions defined in a module by the module name or its alias.</li>
+<li>Functions from modules are prefixed by the module name.</li>
 </ul>
 <div class="highlight"><pre><span></span><span class="n">module_name</span><span class="o">.</span><span class="n">function_name</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
 </pre></div>
@@ -12114,7 +12151,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
 <ul>
-<li>We can compute the square root of the value 225 using the function <code>sqrt()</code> from the <code>math</code> module.</li>
+<li>We can compute the square root of 225 using the function <code>sqrt()</code> from the <code>math</code> module.</li>
 </ul>
 
 </div>
@@ -12158,12 +12195,14 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Example-5">Example 5<a class="anchor-link" href="#Example-5">&#182;</a></h3><hr>
+<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><hr>
 <ul>
-<li>The <code>round()</code> function will round a float number to a specified number of decimal points. </li>
-<li><code>round()</code> will take two parameters:<ul>
-<li>The first is the float number that you're trying to round.</li>
-<li>The second parameter is the number of decimal places you are rounding to. </li>
+<li>The <code>round()</code> function rounds floats to a specified number of decimal points. </li>
+</ul>
+<ul>
+<li>Take two parameters:<ul>
+<li>The first: A float number.</li>
+<li>The second: the number of decimal places you are rounding to. </li>
 </ul>
 </li>
 </ul>
@@ -12208,8 +12247,9 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Mismatched-Parameters">Mismatched Parameters<a class="anchor-link" href="#Mismatched-Parameters">&#182;</a></h4><hr>
 <ul>
-<li>However, if we mistakenly put 3 first and then 123.7897917498714094, we will get an error.</li>
+<li>If we put 3 first and then 123.7897917498714094:</li>
 </ul>
 
 </div>
@@ -12255,8 +12295,9 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Using-the-help()">Using the <code>help()</code><a class="anchor-link" href="#Using-the-help()">&#182;</a></h4><hr>
 <ul>
-<li>Use the <code>help()</code> function or look up the function's documentation to find out what order the parameters should be in.</li>
+<li>Use <code>help()</code> or look up the function's documentation.</li>
 </ul>
 
 </div>
@@ -12327,15 +12368,21 @@ round(...)
 <p>By now you should be able to:</p>
 <ul>
 <li>Install packages from open source.</li>
+</ul>
+<ul>
 <li>Import modules into programs.</li>
+</ul>
+<ul>
 <li>Use functionality from within a module.</li>
+</ul>
+<ul>
 <li>Use functions that take multiple parameters.</li>
 </ul>
-<p>The next chapter will go over how to create user-defined functions. We will go over the basic syntax of a function and relate it to how you can write your own functions. Being able to create user-defined functions can save you time and will increase the readability of your code.</p>
+<p>The next chapter will go over how to create user-defined functions.</p>
 
 </div>
 </div>
-</div>
+</div></section></section>
 </div>
 </div>
 
